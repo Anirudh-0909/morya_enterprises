@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | Morya Enterprises</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .page-hero {
+      background-image: url('file:///C:/Users/AKASH%20JAGTAP/.gemini/antigravity-ide/brain/908b5ccc-41bc-44ca-9e49-3f3befb946af/industrial_printer_hero_1782236760926.png');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 0;
+      position: relative;
+      color: white;
+      text-align: center;
+    }
+    .page-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(17, 24, 39, 0.8);
+    }
+    .page-hero .container {
+      position: relative;
+      z-index: 2;
+    }
+    .page-hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="utility-bar">
+    <div class="container">
+      <div class="utility-left">
+        <a href="mailto:contact@moryaenterprises.com" style="display:flex; align-items:center; gap:6px;">
+          ✉ contact@moryaenterprises.com
+        </a>
+        <span style="display:flex; align-items:center; gap:6px;">
+          📞 +91 98220 12345
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header>
+    <div class="container">
+      <a href="index.html">
+        <img src="logo.jpg" alt="Morya Enterprises" style="height: 50px; width: auto;">
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact Us</a>
+      </nav>
+      <button class="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="about.html" class="active">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <h1>About Morya Enterprises</h1>
+      <p>Your trusted partner in printing and branding since 1996.</p>
+    </div>
+  </section>
+
+  <!-- About Content -->
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <span style="color: var(--primary); font-weight: 600; font-size: 14px; text-transform: uppercase; letter-spacing: 1px;">Our Story</span>
+          <h2>Building Brands Through Print, <span>One Project at a Time</span></h2>
+          <p>Morya Enterprises was founded in 1996 with a straightforward idea — to provide businesses in Pune with printing solutions they could actually rely on. Over the past three decades, we've grown from a small printing shop in Katraj to a full-service branding and printing partner trusted by hundreds of clients.</p>
+          <p style="margin-top: 16px;">We work with corporate offices, real estate developers, educational institutions, hospitals, and manufacturing companies. Our approach is simple: understand what each client needs, deliver it on time, and maintain the quality they expect every single time.</p>
+        </div>
+        <div class="about-image">
+          <img src="file:///C:/Users/AKASH%20JAGTAP/.gemini/antigravity-ide/brain/908b5ccc-41bc-44ca-9e49-3f3befb946af/about_team_1782236528979.png" alt="Morya Enterprises Professional Team">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="logo.jpg" alt="Morya Enterprises">
+          </div>
+          <p>Morya Enterprises delivers expert printing and branding solutions to create professional, high-quality, and lasting impressions for your business.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Commercial Printing</a>
+            <a href="services.html">Corporate Stationery</a>
+            <a href="services.html">Branding Solutions</a>
+            <a href="services.html">Promotional Products</a>
+            <a href="services.html">Real Estate Printing</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="contact-item">
+            📞 <span>+91 98220 12345</span>
+          </div>
+          <div class="contact-item">
+            ✉ <span>contact@moryaenterprises.com</span>
+          </div>
+          <div class="contact-item">
+            📍 <span>Katraj, Pune, Maharashtra</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Morya Enterprises. All rights reserved. Since 1996.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const mobileClose = document.getElementById('mobileClose');
+    function openMenu() { mobileMenu.classList.add('active'); mobileOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; }
+    function closeMenu() { mobileMenu.classList.remove('active'); mobileOverlay.classList.remove('active'); document.body.style.overflow = ''; }
+    hamburger.addEventListener('click', openMenu);
+    mobileClose.addEventListener('click', closeMenu);
+    mobileOverlay.addEventListener('click', closeMenu);
+  </script>
+</body>
+</html>

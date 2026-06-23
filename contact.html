@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Morya Enterprises</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .page-hero {
+      background-image: url('file:///C:/Users/AKASH%20JAGTAP/.gemini/antigravity-ide/brain/908b5ccc-41bc-44ca-9e49-3f3befb946af/industrial_printer_hero_1782236760926.png');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 0;
+      position: relative;
+      color: white;
+      text-align: center;
+    }
+    .page-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(17, 24, 39, 0.8);
+    }
+    .page-hero .container {
+      position: relative;
+      z-index: 2;
+    }
+    .page-hero h1 {
+      font-size: 48px;
+      font-weight: 800;
+      margin-bottom: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="utility-bar">
+    <div class="container">
+      <div class="utility-left">
+        <a href="mailto:contact@moryaenterprises.com" style="display:flex; align-items:center; gap:6px;">
+          ✉ contact@moryaenterprises.com
+        </a>
+        <span style="display:flex; align-items:center; gap:6px;">
+          📞 +91 98220 12345
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Main Header -->
+  <header>
+    <div class="container">
+      <a href="index.html">
+        <img src="logo.jpg" alt="Morya Enterprises" style="height: 50px; width: auto;">
+      </a>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact Us</a>
+      </nav>
+      <button class="hamburger">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <button class="mobile-close" id="mobileClose">&times;</button>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html" class="active">Contact Us</a>
+  </div>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-overlay"></div>
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Have a question or need a quote? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="enquiry-grid">
+        <div class="enquiry-form">
+          <h3 style="font-size: 24px; margin-bottom: 24px; color: var(--text-main);">Send Us an Enquiry</h3>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Full Name</label>
+                <input type="text" class="form-input" placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-input" placeholder="your@email.com">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label class="form-label">Phone</label>
+                <input type="tel" class="form-input" placeholder="+91 98220 12345">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Service Interest</label>
+                <select class="form-select">
+                  <option>Commercial Printing</option>
+                  <option>Branding Solutions</option>
+                  <option>Corporate Stationery</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Message</label>
+              <textarea class="form-textarea" rows="4" placeholder="Tell us about your requirements..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Send Enquiry</button>
+          </form>
+        </div>
+        <div class="enquiry-map">
+          <iframe src="https://www.google.com/maps?q=Katraj,Pune&output=embed" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="logo.jpg" alt="Morya Enterprises">
+          </div>
+          <p>Morya Enterprises delivers expert printing and branding solutions to create professional, high-quality, and lasting impressions for your business.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact Us</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Our Services</h4>
+          <div class="footer-links">
+            <a href="services.html">Commercial Printing</a>
+            <a href="services.html">Corporate Stationery</a>
+            <a href="services.html">Branding Solutions</a>
+            <a href="services.html">Promotional Products</a>
+            <a href="services.html">Real Estate Printing</a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <div class="contact-item">
+            📞 <span>+91 98220 12345</span>
+          </div>
+          <div class="contact-item">
+            ✉ <span>contact@moryaenterprises.com</span>
+          </div>
+          <div class="contact-item">
+            📍 <span>Katraj, Pune, Maharashtra</span>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Morya Enterprises. All rights reserved. Since 1996.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+    const mobileClose = document.getElementById('mobileClose');
+    function openMenu() { mobileMenu.classList.add('active'); mobileOverlay.classList.add('active'); document.body.style.overflow = 'hidden'; }
+    function closeMenu() { mobileMenu.classList.remove('active'); mobileOverlay.classList.remove('active'); document.body.style.overflow = ''; }
+    hamburger.addEventListener('click', openMenu);
+    mobileClose.addEventListener('click', closeMenu);
+    mobileOverlay.addEventListener('click', closeMenu);
+  </script>
+</body>
+</html>
